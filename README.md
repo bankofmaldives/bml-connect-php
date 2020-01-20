@@ -1,8 +1,8 @@
 # BMLConnect
 
-> PHP API Client and bindings for the [Bank of Maldives Connect API](https://github.com/Bank of Maldives Connect APIPay/Bank of Maldives Connect API-apidoc)
+> PHP API Client and bindings for the [Bank of Maldives Connect API](https://github.com/bankofmaldives/bml-connect)
 
-Using this PHP API Client you can interact with your Bank of Maldives Connect API Solutions:
+Using this PHP API Client you can interact with your Bank of Maldives Connect API:
 - 💳 __Transactions__
 
 ## Installation
@@ -33,7 +33,7 @@ require "vendor/autoload.php";
 
 - Run `composer test` and `composer phpcs` before creating a PR to detect any obvious issues.
 - Please create issues for this specific API Binding under the [issues](https://github.com/bankofmaldives/bml-connect-php/issues) section.
-- [Contact Bank of Maldives Connect API Solutions](https://dashboard.merchants.bankofmaldives.com.mv) directly for Bank of Maldives Connect API support.
+- [Contact Bank of Maldives](https://dashboard.merchants.bankofmaldives.com.mv) directly for Bank of Maldives Connect API support.
 
 
 ## Quick Start
