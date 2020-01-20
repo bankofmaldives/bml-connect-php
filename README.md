@@ -1,4 +1,4 @@
-# BMLConnect
+# BMLConnectPHP
 
 > PHP API Client and bindings for the [Bank of Maldives Connect API](https://github.com/bankofmaldives/bml-connect)
 
