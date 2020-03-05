@@ -14,6 +14,11 @@ class Transaction
     private $currency;
 
     /**
+     * @var string
+     */
+    private $isPreAuthorization;
+
+    /**
      * @return int
      */
     public function getAmount()
@@ -54,10 +59,15 @@ class Transaction
         if (array_key_exists('amount', $json) && array_key_exists('currency', $json)) {
             $this->amount = $json['amount'];
             $this->currency = $json['currency'];
-
-            return $this;
+        } else {
+            throw new \InvalidArgumentException('amount and currency are required to sign a transaction');
         }
 
-        throw new \InvalidArgumentException('amount and currency are required to sign a transaction');
+        if (array_key_exists('isPreAuthorization', $json)) {
+            $this->isPreAuthorization = $json['isPreAuthorization'];
+        }
+
+        return $this;
+
     }
 }
