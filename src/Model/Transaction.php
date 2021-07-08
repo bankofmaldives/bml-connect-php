@@ -147,15 +147,15 @@ class Transaction
         }
 
         if (array_key_exists('redirectUrl', $json)) {
-            $this->isPreAuthorization = $json['isPreAuthorization'];
+            $this->redirectUrl = $json['redirectUrl'];
         }
 
         if (array_key_exists('provider', $json)) {
-            $this->isPreAuthorization = $json['provider'];
+            $this->provider = $json['provider'];
         }
 
         if (array_key_exists('localId', $json)) {
-            $this->isPreAuthorization = $json['localId'];
+            $this->localId = $json['localId'];
         }
 
         return $this;
