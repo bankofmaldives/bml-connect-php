@@ -147,7 +147,7 @@ class Transaction
         }
 
         if (array_key_exists('redirectUrl', $json)) {
-            $this->isPreAuthorization = $json['isPreAuthorization'];
+            $this->isPreAuthorization = $json['redirectUrl'];
         }
 
         if (array_key_exists('provider', $json)) {
