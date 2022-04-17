@@ -96,7 +96,7 @@ $json = [
 ];
 
 $transaction = $client->transactions->create($json);
-header('Location: '. $transaction["url"]); // Go to transaction payment page
+header('Location: '. $transaction->url); // Go to transaction payment page
 ```
 
 #### Create transaction without a payment method that will redirect to the payment method selection screen
@@ -113,7 +113,7 @@ $json = [
 ];
 
 $transaction = $client->transactions->create($json);
-header('Location: '. $transaction["url"]); // Go to payment method selection screen
+header('Location: '. $transaction->url); // Go to payment method selection screen
 ```
 
 
